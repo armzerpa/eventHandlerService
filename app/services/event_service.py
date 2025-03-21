@@ -3,7 +3,6 @@ from app.models.event import Event
 from app.repositories.event_repository import EventRepository
 from app.utils.validators import validate_event, validate_uuid
 from app.utils.datetime_utils import normalize_timestamp, parse_date
-from app.utils.validators import ValidationError
 
 
 class EventService:
