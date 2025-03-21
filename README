@@ -1,36 +1,45 @@
-📧 Email Events API
-By Armando Zerpa
+Here’s a **GitHub-friendly README** with improved formatting and structure:  
 
-A simple service that processes email marketing events. It provides two endpoints:
+---
 
-POST /events – Receives, validates, and stores email events.
-GET /events – Retrieves events filtered by customer_id and an optional date range.
-📦 Installation & Setup
-🔹 1. Clone the Repository
-sh
-Copy
-Edit
+# **📧 Email Events API**  
+**By Armando Zerpa**  
+
+A simple service that processes email marketing events. It provides two endpoints:  
+
+- **`POST /events`** – Receives, validates, and stores email events.  
+- **`GET /events`** – Retrieves events filtered by `customer_id` and an optional date range.  
+
+---
+
+## **📦 Installation & Setup**  
+
+### **🔹 1. Clone the Repository**  
+```sh
 git clone https://github.com/armzerpa/eventHandlerService.git
 cd eventHandlerService
-🔹 2. Install Dependencies
-sh
-Copy
-Edit
-pip install -r requirements.txt
-🔹 3. Run the API
-sh
-Copy
-Edit
-python run.py
-🚀 API Endpoints
-📌 1. Create an Event
-POST /events
-Stores an event after validating the JSON payload.
+```
 
-📥 Example Request (JSON)
-json
-Copy
-Edit
+### **🔹 2. Install Dependencies**  
+```sh
+pip install -r requirements.txt
+```
+
+### **🔹 3. Run the API**  
+```sh
+python run.py
+```
+
+---
+
+## **🚀 API Endpoints**  
+
+### **📌 1. Create an Event**  
+#### **`POST /events`**  
+Stores an event after validating the JSON payload.  
+
+#### **📥 Example Request (JSON)**  
+```json
 {
   "event_id": "3176f293-8285-4ba0-a389-e3569069715a",
   "event_type": "purchase",
@@ -40,35 +49,47 @@ Edit
   "product_id": "e42563d1-23e0-4442-9494-f1bb5d983516",
   "amount": 49.99
 }
-📌 2. Retrieve Events
-GET /events
-Retrieves events filtered by customer_id and an optional date range.
+```
 
-📤 Example Request
-sh
-Copy
-Edit
+---
+
+### **📌 2. Retrieve Events**  
+#### **`GET /events`**  
+Retrieves events filtered by `customer_id` and an optional date range.  
+
+#### **📤 Example Request**  
+```sh
 curl --location "http://127.0.0.1:5000/events?customer_id=3176f293-8285-4ba0-a389-e3569069715a&start_date=2025-01-01T00:00:00Z&end_date=2025-01-31T23:59:59Z"
-🛠 Running with Docker
-🚧 Work in Progress...
+```
 
-To build and start the containers:
+---
 
-sh
-Copy
-Edit
+## **🛠 Running with Docker**  
+> 🚧 **Work in Progress...**  
+
+To build and start the containers:  
+```sh
 docker-compose up --build
-To stop the containers:
+```
 
-sh
-Copy
-Edit
+To stop the containers:  
+```sh
 docker-compose down
-📜 Supported Event Types
-✅ email_open
-✅ email_click
-✅ email_unsubscribe
-✅ purchase
-📧 Contact
-📩 Email: ajzerpa@gmail.com
+```
 
+---
+
+## **📜 Supported Event Types**  
+- ✅ `email_open`  
+- ✅ `email_click`  
+- ✅ `email_unsubscribe`  
+- ✅ `purchase`  
+
+---
+
+## **📧 Contact**  
+📩 Email: [ajzerpa@gmail.com](mailto:ajzerpa@gmail.com)  
+
+---
+
+Would you like me to add **MongoDB integration details** or **Swagger documentation**? 🚀
