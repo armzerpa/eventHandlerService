@@ -1,0 +1,54 @@
+[
+  {
+    "event_id": "874f1242-c88f-4b83-ba4d-148d7b7bbfee",
+    "event_type": "email_open",
+    "customer_id": "3176f293-8285-4ba0-a389-e3569069715a",
+    "timestamp": "2025-01-27T12:30:33 UTC-5",
+    "email_id": "0fc1d965-6bd9-40a4-8201-462921f03f1a"
+  },
+  {
+    "event_id": "c05f279d-e897-4af9-9071-84438b3e924c",
+    "event_type": "email_unsubscribe",
+    "customer_id": "3176f293-8285-4ba0-a389-e3569069715a",
+    "timestamp": "2025-01-27T12:30:45 UTC-5",
+    "email_id": "0fc1d965-6bd9-40a4-8201-462921f03f1a"
+  },
+  {
+    "event_id": "d2a01bae-8922-43a6-ab19-eb2078fb1b3c",
+    "event_type": "email_open",
+    "customer_id": "7f262d2b-5903-4511-98e6-db88461a5a7c",
+    "timestamp": "2025-01-27T13:33:33 Europe/Bucharest",
+    "email_id": "a3b8180c-9989-464f-9880-d518a0fac1a9"
+  },
+  {
+    "event_id": "e396cf1b-6364-48eb-aaef-df765e8ea0d5",
+    "event_type": "email_click",
+    "customer_id": "7f262d2b-5903-4511-98e6-db88461a5a7c",
+    "timestamp": "2025-01-27T13:35:21 Europe/Bucharest",
+    "email_id": "a3b8180c-9989-464f-9880-d518a0fac1a9",
+    "clicked_link": "https://example.com/purchase-now"
+  },
+  {
+    "event_id": "44905547-84cd-4c75-b2cc-3cfa01dd7eb8",
+    "event_type": "purchase",
+    "customer_id": "7f262d2b-5903-4511-98e6-db88461a5a7c",
+    "timestamp": "2025-01-27T13:38:03 Europe/Bucharest",
+    "email_id": "a3b8180c-9989-464f-9880-d518a0fac1a9",
+    "product_id": "e42563d1-23e0-4442-9494-f1bb5d983516",
+    "amount": 49.99
+  },
+  {
+    "event_id": "62d3821f-d0b2-4d88-b744-8f149b60b25c",
+    "event_type": "email_open",
+    "customer_id": "39c1d15a-87f7-41c9-8dc2-be75c1282017",
+    "timestamp": "2025-01-21T14:27:00",
+    "email_id": "71a5a863-cfc6-4c3a-95d9-06b39b5b7df2"
+  },
+  {
+    "event_id": "d3ac194a-6ab2-48f5-ae91-b8968478238d",
+    "event_type": "email_open",
+    "customer_id": "fcab8770-8f5b-4610-9f11-d55be63e3a19",
+    "timestamp": 8173362,
+    "email_id": "612245d3-d4d0-4b0c-828f-cf695b77a120"
+  }
+]

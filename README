@@ -1,0 +1,75 @@
+### **Email Events API**
+BY Armando Zerpa
+A simple service that processes email marketing events. It provides two endpoints:
+
+1️⃣ **POST `/events`** – Receives, validates, and stores email events.
+2️⃣ **GET `/events`** – Retrieves events filtered by `customer_id` and an optional `date`.
+
+---
+
+## **📦 Installation & Setup**
+
+### **1️⃣ Clone the Repository**
+```sh
+git clone https://github.com/armzerpa/eventHandlerService.git
+```
+
+### **2️⃣ Install Dependencies**
+```sh
+pip install -r requirements.txt
+```
+
+### **3️⃣ Run the API**
+```sh
+python run.py
+```
+
+---
+
+## **🚀 API Endpoints**
+
+### **1️⃣ Create an Event**
+**`POST /events`**
+- Stores an event after validating the JSON payload.
+
+#### **Example Request (JSON)**
+```json
+{
+    "event_id": "3176f293-8285-4ba0-a389-e3569069715a",
+    "event_type": "purchase",
+    "customer_id": "3176f293-8285-4ba0-a389-e3569069715a",
+    "timestamp": "2025-01-27T13:38:03 Europe/Bucharest",
+    "email_id": "a3b8180c-9989-464f-9880-d518a0fac1a9",
+    "product_id": "e42563d1-23e0-4442-9494-f1bb5d983516",
+    "amount": 49.99
+  }
+```
+
+---
+
+### **2️⃣ Retrieve Events**
+**`GET /customer_id={customer_id}&start_date=2025-01-01T00:00:00Z&end_date=2025-01-31T23:59:59Z`**
+- Fetches events for a specific customer, filtered by date (optional).
+
+#### **Example Request**
+```sh
+curl --location 'http://127.0.0.1:5000/events?customer_id=3176f293-8285-4ba0-a389-e3569069715a&start_date=2025-01-01T00%3A00%3A00Z&end_date=2025-01-31T23%3A59%3A59Z'```
+
+---
+
+## **🛠 Running with Docker**
+1️⃣ **Build & Start Containers**
+```sh
+docker-compose up --build
+```
+WORK in PROGRESS...
+
+---
+
+## **📜 Supported Event Types**
+- `email_open`
+- `email_click`
+- `email_unsubscribe`
+- `purchase`
+
+ajzerpa@gmail.com
